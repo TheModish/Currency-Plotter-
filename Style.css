@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: xx-large;
+}
+
+#Period,#Per{
+    margin-top:10px;
+    padding-top:3px ;
+
+}
+.info {
+    color: red;
+}
+.container{
+    align-items: center;
+}
+.info-button {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 50%; /* Circular shape */
+    width: 30px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    display: inline-flex; /* Display as inline flex to stay on the same line */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    cursor: help; /* Cursor style */
+    margin-left: 5px; /* Add some space between the button and the text */
+}
+/* Style for the info icon */
+.info-button .extra {
+    color: #333; /* Dark gray color */
+    font-size: 20px; /* Size of the icon */
+}
+/* Style for the tooltip */
+.tooltip {
+    position: absolute; /* Positioning relative to the document */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure it's above other content */
+    display: none; /* Initially hidden */
+}
+/* Show tooltip when hovering over the button */
+.info-button:hover + .tooltip {
+    display: block;
+}
+.cont {
+    text-align: center; /* Center-align its children */
+    margin-top: 20px; /* Add some space from the top */
+}
+/* Style for the button */
+.action-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 15px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+}
